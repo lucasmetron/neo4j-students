@@ -12,4 +12,4 @@ export function buildSalesQAGraph() {
   }
 }
 
-export const graph = buildSalesQAGraph();
+export const graph = buildSalesQAGraph().graph;
