@@ -1,14 +1,17 @@
 export const config = {
   apiKey: process.env.OPENROUTER_API_KEY!,
-  httpReferer: '',
-  xTitle: 'IA Devs - Sales Analytics Reporter',
+  httpReferer: "",
+  xTitle: "IA Devs - Sales Analytics Reporter",
   models: [
-    'arcee-ai/trinity-large-preview:free',
+    "google/gemma-4-26b-a4b-it:free",
+    "poolside/laguna-xs.2:free",
+    "poolside/laguna-m.1:free",
+    "openrouter/free",
   ],
   provider: {
     sort: {
-      by: 'throughput', // Route to model with highest throughput (fastest response)
-      partition: 'none',
+      by: "throughput", // Route to model with highest throughput (fastest response)
+      partition: "none",
     },
   },
   temperature: 0.7,
@@ -21,5 +24,4 @@ export const config = {
   maxSubQuestions: 3,
 };
 
-
-export default config
+export default config;
